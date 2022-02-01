@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">E-Store</string>
+    <string name="my_account">My Account</string>
+    <string name="my_orders">My Orders</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string name="drawer_open" tools:ignore="MissingTranslation">Open navigation drawer</string>
+    <string name="drawer_close" tools:ignore="MissingTranslation">Close navigation drawer</string>
+    <string name="share_app">Share App</string>
+    <string name="developer_contact">Developer Contact</string>
+
+</resources>

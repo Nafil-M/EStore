@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp"
+    android:background="#FAFAFA"
+    android:clipToPadding="false"
+    tools:context=".Payment.PaymentSummery">
+
+    <RelativeLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="5dp"
+        android:background="#D8D8D8" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_with_theme_curve_border"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/addressHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lorin_extrabold"
+                    android:text="@string/address"
+                    android:textColor="@color/twaddancolor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/locationIcon"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressHint"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_location_filled"
+                    app:tint="@color/twaddancolor" />
+
+                <TextView
+                    android:id="@+id/addressName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressHint"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/locationIcon"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/lorin_extrabold"
+                    android:singleLine="true"
+                    android:text="Home"
+                    android:textColor="@color/twaddancolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressName"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/locationIcon"
+                    android:fontFamily="@font/lorin_regular"
+                    android:text="Sheikh Zayed Road DIFC, DNada, Tami 2 , 1305 Sheikh Zayed Road DIFC, DNada, Tami 2, Sheikh Zayed Road DIFC, DNada, Tami 2, Sheikh Zayed Road DIFC, DNada, Tami 2,"
+                    android:textColor="@color/grey"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/etaHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/locationIcon"
+                    android:background="@drawable/box_with_theme_curve_border"
+                    android:fontFamily="@font/lorin_bold"
+                    android:paddingStart="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/eta"
+                    android:textColor="@color/twaddancolor"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/eta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_alignTop="@+id/etaHint"
+                    android:layout_alignBottom="@+id/etaHint"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/lorin_extrabold"
+                    android:gravity="center"
+                    android:text="@string/dummyEta"
+                    android:textColor="@color/red_type_1"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/discountLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box_with_theme_curve_border"
+                    android:fontFamily="@font/lorin_regular"
+                    android:hint="@string/discountVoucher"
+                    android:inputType="text"
+                    android:paddingStart="14dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/discountVerify"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".3"
+                    android:background="@drawable/twaddan_theme_side_curve_btn"
+                    android:fontFamily="@font/lorin_regular"
+                    android:gravity="center"
+                    android:text="@string/verify"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/availableOffers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lorin_extrabold"
+                android:text="@string/viewAvailableOffers"
+                android:textColor="@color/twaddancolor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lorin_extrabold"
+                android:text="@string/paymentMode"
+                android:textColor="@color/twaddancolor"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box_with_theme_curve_border"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="7dp"
+                android:paddingBottom="3dp">
+
+                <RadioButton
+                    android:id="@+id/debitOrCredit"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:buttonTint="@color/twaddancolor"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/card_payment"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debitOrCredit"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/lorin_bold"
+                    android:textColor="#4E4E4E"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emailLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/emailHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lorin_bold"
+                    android:text="@string/emailId"
+                    android:textColor="@color/twaddancolor"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box_with_theme_curve_border"
+                    android:fontFamily="@font/lorin_regular"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="14dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box_with_theme_curve_border"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="7dp"
+                android:paddingBottom="3dp">
+
+                <RadioButton
+                    android:id="@+id/cod"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:buttonTint="@color/twaddancolor"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cod_payment"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cod"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/lorin_bold"
+                    android:textColor="#4E4E4E"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightcolor"
+    tools:context=".Help.WriteToUsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_orders_driver"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/lightcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3_orders_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/lorin_bold"
+            android:text="Write to Us"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_icon_top_orders_driver"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_icon_top_orders_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:onClick="OnClickBack"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/constraintLayout_orders_driver">
+
+        <RelativeLayout
+            android:id="@+id/namelyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/white_allside_lesscurved">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/lorin_bold"
+                android:hint="Name*"
+                android:padding="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/error_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namelyt"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lorin_light"
+            android:text="Can't be empty"
+            android:textSize="13sp"
+            android:textColor="@color/errorred" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/moblyt"
+            android:layout_below="@+id/error_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_allside_lesscurved">
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/lorin_bold"
+                android:hint="Mobile Number*"
+                android:padding="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/error_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moblyt"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lorin_light"
+            android:text="Can't be empty"
+            android:textColor="@color/errorred"
+            android:textSize="13sp" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/emaillyt"
+            android:layout_below="@+id/error_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_allside_lesscurved">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/lorin_bold"
+                android:hint="Email ID*"
+                android:padding="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/error_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emaillyt"
+            android:textSize="13sp"
+            android:layout_marginStart="35dp"
+            android:text="Can't be empty"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lorin_light"
+            android:textColor="@color/errorred"/>
+
+        <RelativeLayout
+            android:id="@+id/msglyt"
+            android:layout_below="@+id/error_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_allside_lesscurved">
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/lorin_bold"
+                android:hint="Please enter your Message"
+                android:padding="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msglyt"
+            android:layout_marginStart="35dp"
+            android:text="Can't be empty"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lorin_light"
+            android:textColor="@color/errorred"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/curvedtop_left_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lorin_bold"
+            android:padding="13dp"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

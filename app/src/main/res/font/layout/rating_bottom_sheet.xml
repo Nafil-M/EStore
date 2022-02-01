@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/topleft_curved_white">
+
+    <RelativeLayout
+        android:id="@+id/headlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value Of Service"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lorin_extrabold"
+            android:textSize="19sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/lorin_extrabold"
+            android:layout_marginEnd="15dp"
+            android:textSize="19sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ratelyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headlt"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/rateimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/seekbar"
+            android:src="@drawable/terrible_imoji" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekbar"
+            style="@style/tallerBarStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:max="4"
+            android:tickMark="@drawable/ic_baseline_brightness_1_24"
+            android:progressBackgroundTint="@color/greyy"
+            android:progressTint="@color/yellow"
+            android:splitTrack="true"
+            android:thumb="@drawable/rating_thumb"
+            tools:progress="0" />
+
+        <TextView
+            android:id="@+id/ratereview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/seekbar"
+            android:fontFamily="@font/lorin_bold"
+            android:text="Terrible"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratelyt"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/colorBtnTouchGrey" />
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/curvedtop_left_blue"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lorin_bold"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".LanguageSelection.LanguageSelectionActivity">
+
+
+    <ImageView
+        android:id="@+id/imgcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/selectlang_img" />
+
+    <TextView
+        android:id="@+id/syl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightblue"
+        android:text="Select Your Language"
+        android:fontFamily="@font/lorin_regular"
+        android:textSize="20dp"
+        android:layout_below="@+id/imgcar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lorin_regular"
+            android:text="@string/english"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/englishUl"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/english"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightblue"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/english"
+            android:fontFamily="@font/lorin_regular"
+            android:text="@string/arabic"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/arabicUl"
+            android:layout_width="40dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/arabic"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/english"
+            android:background="@color/lightblue"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

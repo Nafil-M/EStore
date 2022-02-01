@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/topleft_curved_white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popup_design"/>
+
+    <TextView
+        android:id="@+id/ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lorin_extrabold"
+        android:text="Verified"
+        android:textColor="@color/twaddancolor"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/ver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/verified" />
+
+    <RelativeLayout
+        android:id="@+id/ddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/phon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ph" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/phon"
+            android:fontFamily="@font/lorin_extrabold"
+            android:text="+971 68 789000"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ddd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/lorin_bold"
+        android:gravity="center"
+        android:text="Your mobile number verified successfully"
+        android:textColor="@color/new_color_primary"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15sp"
+            android:fontFamily="@font/lorin_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            android:text="CANCEL"
+            android:textColor="@color/twaddancolor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fafaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/topleft_blue_lesscurved"
+            android:fontFamily="@font/lorin_bold"
+            android:paddingStart="30dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="13dp"
+            android:paddingBottom="12dp"
+            android:text="CONTINUE"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

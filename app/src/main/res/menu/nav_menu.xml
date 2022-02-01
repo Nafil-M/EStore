@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:showIn="nav">
+
+    <group>
+        <item
+            android:id="@+id/myac"
+            android:title="@string/my_account" />
+        <item
+            android:id="@+id/myorders"
+            android:title="@string/my_orders"/>
+        <item
+            android:id="@+id/aboutus"
+            android:title="@string/about_us"/>
+        <item
+            android:id="@+id/contactus"
+            android:title="@string/contact_us"/>
+
+        <item
+            android:id="@+id/shareapp"
+            android:title="@string/share_app"/>
+
+        <item
+            android:id="@+id/develeporcontact"
+            android:title="@string/developer_contact"/>
+
+    </group>
+</menu>

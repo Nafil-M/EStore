@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/usernamelyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/uuu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/uuu"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp"
+                android:singleLine="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/passlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamelyt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/uuu2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/uuu2"
+                android:textSize="15sp"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/imagepassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/show_pass" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passlyt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/lorin_regular"
+            android:text="Remember Me"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/loginbtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/passlyt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/lorin_bold"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Not Registered..? "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/reg"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Sign Up"
+                android:textColor="@color/teal_200"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

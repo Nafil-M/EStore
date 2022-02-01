@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_allside_lesscurved"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <RelativeLayout
+        android:id="@+id/imglyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pastorder_img"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imglyt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/spname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Al Aimtiaz Wash"
+            android:fontFamily="@font/lorin_bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/dateandtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7-Jul-2020 4:30 AM"
+            android:fontFamily="@font/lorin_regular"
+            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/pastorder_item"
+            android:layout_below="@+id/spname"/>
+
+        <RelativeLayout
+            android:id="@+id/Oid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateandtime"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID : "
+                android:fontFamily="@font/lorin_regular"
+                android:textSize="14sp"
+                android:textColor="@color/pastorder_item" />
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456789009876"
+                android:layout_toEndOf="@+id/id"
+                android:fontFamily="@font/lorin_regular"
+                android:textSize="14sp"
+                android:textColor="@color/pastorder_item" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            style="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:isIndicator="true"
+            android:layout_below="@+id/Oid"
+            android:max="5" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/reorder"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:background="@drawable/curvedtop_left_blue_low_radius">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REORDER"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/lorin_regular"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ratebtn"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@+id/reorder"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/curvedtop_left_blue_low_radius">
+
+                <ImageView
+                    android:id="@+id/imgsmile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/smilegood"
+                    android:layout_marginStart="2dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RATE"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/imgsmile"
+                    android:fontFamily="@font/lorin_regular"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+</RelativeLayout>

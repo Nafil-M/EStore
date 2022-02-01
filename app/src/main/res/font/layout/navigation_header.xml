@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/hiii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginStart="45dp"
+            android:id="@+id/tvhello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Hello !"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/lorin_extrabold"
+            android:textColor="@color/colorPrimary"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvcustName"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="David Villa"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:fontFamily="@font/lorin_bold"
+            android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvarrow"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=">"
+                android:layout_toEndOf="@+id/tvcustName"
+                android:layout_height="wrap_content"
+                android:textSize="27sp"
+                android:fontFamily="@font/lorin_bold"
+                android:textColor="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/hiii"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grey" />
+
+</RelativeLayout>

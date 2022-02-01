@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/usernamelyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/uuu"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/uuu"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/passlyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/usernamelyt"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/uuu2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/uuu2"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/passlyt"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/mobi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Mobile"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/mobi"
+                android:background="@drawable/all_side_curved_white"
+                android:fontFamily="@font/lorin_regular"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/regbtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/mob"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/lorin_bold"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/regbtn">
+
+            <TextView
+                android:id="@+id/logg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Already Registered..? "
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textSize="12sp"
+                android:fontFamily="@font/lorin_regular"
+                android:textColor="@color/teal_200"
+                android:layout_toEndOf="@+id/logg"
+                android:layout_marginStart="3dp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillAddress.FillAddressActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_orders_driver"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/twaddancolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3_orders_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:fontFamily="@font/lorin_bold"
+            android:text="Fill Address Page"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_icon_top_orders_driver"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_icon_top_orders_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/constraintLayout_orders_driver">
+
+        <RelativeLayout
+            android:id="@+id/fillpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <RelativeLayout
+                android:id="@+id/firstnamelyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="First Name"
+                    android:padding="15dp" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="First Name"
+                android:textSize="13sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/error_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstnamelyt"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/lastnamelyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/error_firstname"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Last Name"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstnamelyt"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Last Name"
+                android:textSize="13sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/error_secondname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastnamelyt"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/error_secondname"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Mobile Number"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastnamelyt"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Number"
+                android:textSize="13sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/error_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Email"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <!--add map here-->
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/fillpage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fillpage"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/addressnickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/adnickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Address Nick Name"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/error_addressnickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressnickname"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/houselyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/error_addressnickname"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/houseno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="House/Appartment/Office No"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressnickname"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="House/Appartment/Office No"
+                android:textSize="13sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/error_houseno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/houselyt"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/additional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/error_houseno"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/adnotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Additional Directions/Notes"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/houselyt"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Additional Directions/Notes"
+                android:textSize="13sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/error_Adnotess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/additional"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/vehicleplate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/error_Adnotess"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/allside_curved_white_with_border">
+
+                <EditText
+                    android:id="@+id/vehplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Vehicle Plate Number"
+                    android:padding="15dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/additional"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Vehicle Plate Number"
+                android:textSize="13sp"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:id="@+id/error_vehplate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicleplate"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/lorin_regular"
+                android:text="Field Empty"
+                android:textColor="@color/errorred"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/agree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fillpage2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/ee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/checkbox"
+                android:text="I Agree with Terms and Conditions" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/curvedtop_left_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lorin_bold"
+            android:padding="13dp"
+            android:text="PROCEED"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
